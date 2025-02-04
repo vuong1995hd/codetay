@@ -30,7 +30,7 @@ public class UserPrinciple implements UserDetails {
     }
 
     public static UserPrinciple build(AppUser user) {
-//        quyen instance cua
+
         List<GrantedAuthority> authorities = new ArrayList<>();
         for (AppRole a : user.getRoll()){
             authorities.add(new SimpleGrantedAuthority(a.getName()));
