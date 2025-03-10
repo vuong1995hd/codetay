@@ -6,7 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 
 
 @Entity
-@Table(name = "app_role")
+@Table(name = "app_roles")
 @Data
 public class AppRole implements GrantedAuthority {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
